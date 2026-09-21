@@ -14,7 +14,7 @@ class QuoteControllerTest {
     }
 
     @Test
-    void quoteIsNeverEmpty() {
+    void quoteIsNotEmpty() {
         String quote = controller.quote();
         assertNotNull(quote);
         assertFalse(quote.isBlank());
